@@ -1,4 +1,4 @@
-{
+export const lessons = {
   "lessons":[
     {
       "id":1,

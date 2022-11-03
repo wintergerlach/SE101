@@ -1,4 +1,4 @@
-{
+export const cert ={
   "tests":[
     {
       "id":1,
