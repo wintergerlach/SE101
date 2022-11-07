@@ -1,6 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
+      <ion-icon name="arrow-back" *ngIf="state === 'test'" (click)="back()"></ion-icon>
       Certification Prep
     </ion-title>
   </ion-toolbar>
@@ -9,9 +10,29 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Certification Prep</ion-title>
+      <ion-title size="large">
+        <ion-icon name="arrow-back" *ngIf="state === 'test'" (click)="back()"></ion-icon>
+        Certification Prep
+      </ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <div *ngIf="state === 'select'">
+    <div *ngFor="let item of certs" class="option">
+      <div (click)="selected(item.id)">
+        <div>{{item.title}}</div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="state === 'test'">
+  
+      <div *ngFor="let item of certs">
+        <div *ngIf="item.id == id">
+          <div> {{item.title}} </div>
+          <!--loop with questions-->
+        </div>
+      </div>
+  </div>
+
+  
 </ion-content>

@@ -6,7 +6,7 @@ export const lessons = {
       "content":"content goes here",
       "comprhension":[
         {
-          "question": "What is a fish?",
+          "question": "What is a phish?",
           "answers":[
             "answer", "answer", "answer", "answer"
           ],
@@ -20,7 +20,7 @@ export const lessons = {
       "content":"content goes here",
       "comprhension":[
         {
-          "question": "What is a fish?",
+          "question": "What is a phish?",
           "answers":[
             "answer", "answer", "answer", "answer"
           ],
@@ -34,7 +34,7 @@ export const lessons = {
       "content":"content goes here",
       "comprhension":[
         {
-          "question": "What is a fish?",
+          "question": "What is a phish?",
           "answers":[
             "answer", "answer", "answer", "answer"
           ],

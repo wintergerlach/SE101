@@ -18,4 +18,8 @@ export class Tab1Page {
     this.id = id;
     //may need more magic code
   }
+
+  back(): void{
+    this.state = "select";
+  }
 }
