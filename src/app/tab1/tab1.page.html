@@ -12,5 +12,21 @@
       <ion-title size="large">Lessons</ion-title>
     </ion-toolbar>
   </ion-header>
-
+  <div *ngIf="state === 'select'">
+    <div *ngFor="let item of lessons" class="option">
+      <div (click)="selected(item.id)">
+        <div>{{item.title}}</div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="state === 'lesson'">
+  
+      <div *ngFor="let item of lessons">
+        <div *ngIf="item.id === id">
+          <div> {{item.title}} </div>
+          <div>{{item.content}}</div>
+          <!--quiz-->
+        </div>
+      </div>
+  </div>
 </ion-content>
