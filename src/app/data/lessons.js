@@ -4,21 +4,20 @@ export const lessons = {
       "id":1,
       "title":"Give lesson a name", 
       "content":"content goes here",
-      "comprhension":[
+      "comprhension":
         {
           "question": "What is a phish?",
           "answers":[
-            "answer", "answer", "answer", "answer"
+            "answer1", "answer2", "answer3", "answer4"
           ],
           "corrent": "answer"
         }
-      ]
     },
     {
       "id":2,
       "title":"Give lesson a name", 
       "content":"content goes here",
-      "comprhension":[
+      "comprhension":
         {
           "question": "What is a phish?",
           "answers":[
@@ -26,13 +25,12 @@ export const lessons = {
           ],
           "corrent": "answer"
         }
-      ]
     },
     {
       "id":3,
       "title":"Give lesson a name",
       "content":"content goes here",
-      "comprhension":[
+      "comprhension":
         {
           "question": "What is a phish?",
           "answers":[
@@ -40,7 +38,6 @@ export const lessons = {
           ],
           "corrent": "answer"
         }
-      ]
     }
   ]
 }

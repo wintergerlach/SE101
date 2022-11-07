@@ -29,7 +29,17 @@
         <div *ngIf="item.id === id">
           <div> {{item.title}} </div>
           <div>{{item.content}}</div>
-          <!--quiz-->
+          <div>{{item.comprhension.question}} </div>
+          <!--<ion-list>
+          <div *ngFor="let a of item.comprhension.answers"> 
+            <ion-radio-group value="answer1" name="check">
+              <ion-item>
+                <ion-label>{{a}}</ion-label>
+                <ion-radio slot="end" value="{{a}}" name="check"></ion-radio>
+              </ion-item>
+            </ion-radio-group>
+          </div>
+        </ion-list>-->
         </div>
       </div>
   </div>
