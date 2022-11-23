@@ -10,6 +10,7 @@ export class Tab1Page {
   lessons = lessons.lessons;
   state = 'select'
   id = 0
+  answer=""
   constructor()
   {}
 

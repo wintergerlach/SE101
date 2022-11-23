@@ -17,9 +17,9 @@
     </ion-toolbar>
   </ion-header>
   <div *ngIf="state === 'select'">
-    <div *ngFor="let item of lessons" class="option">
+    <div *ngFor="let item of lessons" class="button">
       <div (click)="selected(item.id)">
-        <div>{{item.title}}</div>
+        <div class="text">{{item.title}}</div>
       </div>
     </div>
   </div>
@@ -27,19 +27,11 @@
   
       <div *ngFor="let item of lessons">
         <div *ngIf="item.id === id">
-          <div> {{item.title}} </div>
-          <div>{{item.content}}</div>
-          <div>{{item.comprhension.question}} </div>
-          <!--<ion-list>
-          <div *ngFor="let a of item.comprhension.answers"> 
-            <ion-radio-group value="answer1" name="check">
-              <ion-item>
-                <ion-label>{{a}}</ion-label>
-                <ion-radio slot="end" value="{{a}}" name="check"></ion-radio>
-              </ion-item>
-            </ion-radio-group>
-          </div>
-        </ion-list>-->
+          <div class="title"> {{item.title}} </div>
+          <div class="content">{{item.content}}</div>
+          <div class="line"></div>
+          <div class="question">{{item.comprhension.question}} </div>
+          <!--loop with answers-->
         </div>
       </div>
   </div>

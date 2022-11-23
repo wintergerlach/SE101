@@ -1,0 +1,60 @@
+.button {
+  width:95%;
+  height: 70px;
+  text-align: center;
+  color: #352918;
+  background-color: #d3b98b;
+  border: 3px solid;
+  border-color: #352918;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+.text {
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 30px;
+  display: inline-block;
+  vertical-align: sub;
+}
+
+.title {
+  width:95%;
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+  color: #856948 ;
+  margin-top: 10px;
+  text-decoration:bold ;
+}
+
+.content {
+
+ width:95%;
+  font-size: 20px;
+  font-weight: 100;
+  color: #000000;
+  margin-top: 10px;
+  margin-left:7px;
+  margin-right:7px;
+  margin-bottom: 10px;
+}
+
+.question {
+  width:95%;
+  font-size: 20px;
+  font-weight: 200;
+  color: #000000;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.line {
+  width:100%;
+  height:3px;
+  background-color: #352918 ;
+}
+
+ion-label {
+  height: fit-content;
+}

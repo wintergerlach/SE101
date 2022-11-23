@@ -18,9 +18,9 @@
   </ion-header>
 
   <div *ngIf="state === 'select'">
-    <div *ngFor="let item of certs" class="option">
+    <div *ngFor="let item of certs" class="button">
       <div (click)="selected(item.id)">
-        <div>{{item.title}}</div>
+        <div class="text">{{item.title}}</div>
       </div>
     </div>
   </div>
