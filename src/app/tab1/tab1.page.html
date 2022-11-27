@@ -16,6 +16,7 @@
       </ion-title>
     </ion-toolbar>
   </ion-header>
+
   <div *ngIf="state === 'select'">
     <div *ngFor="let item of lessons" class="button">
       <div (click)="selected(item.id)">
@@ -23,16 +24,20 @@
       </div>
     </div>
   </div>
+
   <div *ngIf="state === 'lesson'">
-  
       <div *ngFor="let item of lessons">
         <div *ngIf="item.id === id">
           <div class="title"> {{item.title}} </div>
           <div class="content">{{item.content}}</div>
           <div class="line"></div>
-          <div class="question">{{item.comprhension.question}} </div>
-          <!--loop with answers-->
+          <div class="question">{{item.comprehension.question}} </div>
+          <div *ngFor="let answer of item.comprehension.answers; index as i" class="answers">
+            <input type="radio" name="answer" value="{{i}}" [(ngModel)]="selectedAnswer"> {{answer}}
+          </div>
+          <div class="check" (click)="check()">Submit</div>
         </div>
       </div>
   </div>
+
 </ion-content>
