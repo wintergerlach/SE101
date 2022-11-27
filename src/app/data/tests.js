@@ -6,12 +6,20 @@ export const cert ={
       "questions":
       [
         {
+          "id":0,
+          "question":"questions",
+          "answers":[
+            "a", "b", "c", "d"
+          ],
+          "correct":1
+        },
+        {
           "id":1,
           "question":"questions",
           "answers":[
             "a", "b", "c", "d"
           ],
-          "correct":"a"
+          "correct":1
         },
         {
           "id":2,
@@ -19,15 +27,7 @@ export const cert ={
           "answers":[
             "a", "b", "c", "d"
           ],
-          "correct":"a"
-        },
-        {
-          "id":3,
-          "question":"questions",
-          "answers":[
-            "a", "b", "c", "d"
-          ],
-          "correct":"a"
+          "correct":1
         }
       ]
     },
@@ -37,12 +37,20 @@ export const cert ={
       "questions":
       [
         {
+          "id":0,
+          "question":"questions",
+          "answers":[
+            "a", "b", "c", "d"
+          ],
+          "correct":1
+        },
+        {
           "id":1,
           "question":"questions",
           "answers":[
             "a", "b", "c", "d"
           ],
-          "correct":"a"
+          "correct":1
         },
         {
           "id":2,
@@ -50,30 +58,22 @@ export const cert ={
           "answers":[
             "a", "b", "c", "d"
           ],
-          "correct":"a"
-        },
-        {
+          "correct":1
+        },{
           "id":3,
           "question":"questions",
           "answers":[
             "a", "b", "c", "d"
           ],
-          "correct":"a"
-        },{
+          "correct":1
+        },
+        {
           "id":4,
           "question":"questions",
           "answers":[
             "a", "b", "c", "d"
           ],
-          "correct":"a"
-        },
-        {
-          "id":5,
-          "question":"questions",
-          "answers":[
-            "a", "b", "c", "d"
-          ],
-          "correct":"a"
+          "correct":1
         }
       ]
     },
@@ -83,12 +83,20 @@ export const cert ={
       "questions":
       [
         {
+          "id":0,
+          "question":"questions",
+          "answers":[
+            "a", "b", "c", "d"
+          ],
+          "correct":1
+        },
+        {
           "id":1,
           "question":"questions",
           "answers":[
             "a", "b", "c", "d"
           ],
-          "correct":"a"
+          "correct":1
         },
         {
           "id":2,
@@ -96,7 +104,7 @@ export const cert ={
           "answers":[
             "a", "b", "c", "d"
           ],
-          "correct":"a"
+          "correct":1
         },
         {
           "id":3,
@@ -104,7 +112,7 @@ export const cert ={
           "answers":[
             "a", "b", "c", "d"
           ],
-          "correct":"a"
+          "correct":1
         },
         {
           "id":4,
@@ -112,15 +120,7 @@ export const cert ={
           "answers":[
             "a", "b", "c", "d"
           ],
-          "correct":"a"
-        },
-        {
-          "id":5,
-          "question":"questions",
-          "answers":[
-            "a", "b", "c", "d"
-          ],
-          "correct":"a"
+          "correct":1
         }
       ]
     }

@@ -46,7 +46,7 @@
   font-weight: 200;
   color: #000000;
   text-align: center;
-  margin-top: 10px;
+  margin: 10px;
 }
 
 .line {
@@ -66,12 +66,31 @@ ion-label {
 
 .check {
   width: 50%;
-  color: white;
-  background: purple;
+  color: #352918;
+  background-color: #d3b98b;
+  font-weight: bold;
   height: 40px;
   border-radius: 2px;
   padding-top: 11px;
   text-align: center;
   margin: auto;
   margin-bottom: 10px;
+}
+
+.correct {
+  text-align: center;
+  color: #7E9875;
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.wrong {
+  text-align: center;
+  color: #CD5C5C ;
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }

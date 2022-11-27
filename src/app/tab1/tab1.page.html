@@ -31,13 +31,29 @@
           <div class="title"> {{item.title}} </div>
           <div class="content">{{item.content}}</div>
           <div class="line"></div>
+          <div *ngIf="answer === 'correct'">
+            <div class="correct"> You got it right!</div>
+          </div>
+          <div *ngIf="answer === 'wrong'">
+            <div class="wrong"> You got it wrong.</div>
+          </div>
           <div class="question">{{item.comprehension.question}} </div>
           <div *ngFor="let answer of item.comprehension.answers; index as i" class="answers">
             <input type="radio" name="answer" value="{{i}}" [(ngModel)]="selectedAnswer"> {{answer}}
           </div>
-          <div class="check" (click)="check()">Submit</div>
+          <div class="check" (click)="check()" *ngIf="answer === 'none'">Submit</div>
         </div>
       </div>
+  </div>
+
+  <div *ngIf="answer === 'correct'">
+    <div class="check" (click)="back()"> Back</div>
+    <div class="check" (click)="next()"> Next Lesson</div>
+  </div>
+
+  <div *ngIf="answer === 'wrong'">
+    <div class="check" (click)="back()"> Back</div>
+    <div class="check" (click)="next()"> Next Lesson</div>
   </div>
 
 </ion-content>

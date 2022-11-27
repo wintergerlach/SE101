@@ -28,10 +28,29 @@
   
       <div *ngFor="let item of certs">
         <div *ngIf="item.id == id">
-          <div> {{item.title}} </div>
-          <!--loop with questions-->
+          <div *ngFor="let question of item.questions">
+           <div *ngIf="question.id === questionId">
+              <div class="question"> {{question.question}}</div>
+              <div *ngFor="let answer of question.answers; index as i" class="answers">
+                <input type="radio" name="answer" value="{{i}}" [(ngModel)]="selectedAnswer"> {{answer}}
+              </div>
+              <div *ngIf="item.questions.length-1 !== questionId" class="smallButton" (click)="next()">Next</div>
+              <div *ngIf="item.questions.length-1 === questionId" class="smallButton" (click)="check()">Submit</div>
+           </div>
+          </div>
         </div>
       </div>
+  </div>
+
+  <div *ngIf="state === 'results'">
+    <div class="results"> You got {{results}} out of {{answers.length}} correct</div>
+    <div *ngIf="message === 'good'" class="good">
+      Time to schedule that examine!
+    </div>
+    <div *ngIf="message === 'bad'" class="bad">
+      Might be time to hit those books again. 
+    </div>
+    <div class="smallButton" (click)="back()"> Back</div>
   </div>
 
   

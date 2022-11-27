@@ -17,3 +17,56 @@
   display: inline-block;
   vertical-align: sub;
 }
+
+.answers {
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
+.question {
+  width:95%;
+  font-size: 20px;
+  font-weight: 200;
+  color: #000000;
+  text-align: center;
+  margin: 10px;
+}
+
+.smallButton {
+  width: 50%;
+  color: #352918;
+  background-color: #d3b98b;
+  font-weight: bold;
+  height: 40px;
+  border-radius: 2px;
+  padding-top: 11px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.good {
+  text-align: center;
+  color: #7E9875;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.bad {
+  text-align: center;
+  color: #CD5C5C ;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.results {
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 15px;
+}

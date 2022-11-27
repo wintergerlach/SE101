@@ -11,7 +11,7 @@ export class Tab1Page {
   lessons = lessonData;
   state = 'select';
   id = 0;
-  answer='';
+  answer='none';
   selectedAnswer = 0;
 
   constructor()
@@ -25,15 +25,24 @@ export class Tab1Page {
 
   back(): void{
     this.state = 'select';
+    this.answer = 'none'
+    this.id = 0;
+    this.selectedAnswer = 0;
   }
 
   check(): void {
     console.log(typeof(this.selectedAnswer));
     console.log(typeof(this.lessons[this.id].comprehension.correct));
     if (this.selectedAnswer === this.lessons[this.id].comprehension.correct.toString()) {
-      this.id += 1;
+      this.answer = 'correct'
     } else {
-      alert ('you suck!');
+      this.answer = 'wrong'
     }
+  }
+
+  next(): void{
+    this.id += 1;
+    this.answer = 'none';
+    this.selectedAnswer = 0;
   }
 }
