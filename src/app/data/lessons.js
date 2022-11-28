@@ -16,28 +16,34 @@ export const lessonData = [
     },
     {
       "id":1,
-      "title":"Give lesson a name", 
-      "content":"content goes here",
+      "title":"Tech Support Scam", 
+      "content":"Scammers posing as tech assistants want you to think your machine is infected with a virus or has some other significant issue. They want you to pay for tech support services you don't require in order to solve an imaginary problem. Because they are aware that those methods of payment can be challenging to reverse, they frequently request that you wire money, load money into a gift card, prepaid card, or cash reload card, use cryptocurrencies, or utilize a money transfer app. Tech support con artists employ a wide range of strategies to deceive customers. You can avoid falling victim to fraud by recognizing these tricks. They will employ several strategies, including phone calls, pop-up alerts, and web advertisements.",
       "comprehension":
         {
-          "question": "What is a phish?",
+          "question": "Which of the following scenarios does NOT describe a tech support scam?",
           "answers":[
-            "answer", "answer", "answer", "answer"
+            "Someone calls and tells you they've found viruses on your computer, then asks for credit card information so they can bill you for the tech support services.", 
+            "While you're browsing online, an urgent message pops up telling you that there's a problem with your computer and directs you to a website to download software to fix the issues.", 
+            "A caller asks you to give them remote access to your computer so they can fix a problem in your computer.", 
+            "You pay a trusted security professional to check your network for intrusions, and the professional tells you that your network has a problem that needs to be fixed"
           ],
-          "correct": 1
+          "correct": 3
         }
     },
     {
       "id":2,
-      "title":"Give lesson a name",
-      "content":"content goes here",
+      "title":"Ransomware",
+      "content":"Ransomware is a type of malware intended for holding a targets data at ransom. This can be done by encrypting a user’s data so that they cannot access it. After, a hacker will demand ransom, only offering to provide access after in return. This ransom could be cash, bitcoin, or anything else they desire. The most common types of ransomwares are encryption ransomware, screen locker, scareware, doxware/leakware, and Raas (Ransomware as a service). The best form of defense against this is anti-malware software, along with backups so long as the encrypted data does not get backed up.",
       "comprehension":
         {
-          "question": "What is a phish?",
+          "question": "What is ransomware?",
           "answers":[
-            "answer", "answer", "answer", "answer"
+            "Software that infects computer networks and mobile devices to old data hostage until the victim sends money to the attacker.", 
+            "Computer equipment that criminals will not return until you pay them", 
+            "Software intended for protecting your device from harmful malware", 
+            "A form of cryptocurrency"
           ],
-          "correct": 1
+          "correct": 0
         }
     }
   ]
