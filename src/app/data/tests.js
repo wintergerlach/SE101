@@ -2,123 +2,135 @@ export const cert ={
   "tests":[
     {
       "id":1,
-      "title": "Test 1",
+      "title": "CISA",
       "questions":
       [
         {
           "id":0,
-          "question":"questions",
+          "question":"The IT Assurance Framework consists of all of the following except:",
           "answers":[
-            "a", "b", "c", "d"
+            "ISACA Code of Professional Ethics", 
+            "IS audit and assurance standards", 
+            "ISACA Audit Job Practice", 
+            "IS audit and assurance guidelines"
           ],
-          "correct":1
+          "correct":2
         },
         {
           "id":1,
-          "question":"questions",
+          "question":"An audit project has been taking far too long, and management is beginning to ask questions about its schedule and completion. This audit may be lacking:",
           "answers":[
-            "a", "b", "c", "d"
+            "Effective project management", 
+            "Cooperation from individual auditees", 
+            "Enough skilled auditors", 
+            "Clearly stated scope and objectives"
           ],
-          "correct":1
+          "correct":0
         },
         {
           "id":2,
-          "question":"questions",
+          "question":"Which of the following is true about the ISACA Audit Standards and Audit Guidelines?",
           "answers":[
-            "a", "b", "c", "d"
+            "ISACA Audit Standards are mandatory", 
+            "ISACA Audit Standards are optional.", 
+            "ISACA Audit Guidelines are mandatory.", 
+            "ISACA Audit Standards are only mandatory for SOX audits."
           ],
-          "correct":1
+          "correct":0
         }
       ]
     },
     {
       "id":2,
-      "title": "Test 2",
+      "title": "CISSP",
       "questions":
       [
         {
           "id":0,
-          "question":"questions",
+          "question":"Why is separation of duties important for security purposes?",
           "answers":[
-            "a", "b", "c", "d"
+            "It ensures that multiple people can do the same job.", 
+            "It prevents an organization from losing important information when they lose important people.", 
+            "It prevents any single security person from being able to make major security changes without involving other individuals.", 
+            "It helps employees concentrate their talents where they will be most useful."
           ],
-          "correct":1
+          "correct":2
         },
         {
           "id":1,
-          "question":"questions",
+          "question":"What is the final step of a quantitative risk analysis?",
           "answers":[
-            "a", "b", "c", "d"
+            "Determine asset value.", 
+            "Assess the annualized rate of occurrence.", 
+            "Derive the annualized loss expectancy.", 
+            "Conduct a cost/benefit analysis."
           ],
-          "correct":1
+          "correct":3
         },
         {
           "id":2,
-          "question":"questions",
+          "question":"An evil twin attack that broadcasts a legitimate SSID for an unauthorized network is an example of what category of threat?",
           "answers":[
-            "a", "b", "c", "d"
+            "Spoofing", 
+            "Information disclosure", 
+            "Repudiation", 
+            "Tampering"
           ],
-          "correct":1
+          "correct":0
         },{
           "id":3,
-          "question":"questions",
+          "question":"How can a data retention policy help to reduce liabilities?",
           "answers":[
-            "a", "b", "c", "d"
+            "By ensuring that unneeded data isn't retained", 
+            "By ensuring that incriminating data is destroyed", 
+            "By ensuring that data is securely wiped so it cannot be restored for legal discovery", 
+            "By reducing the cost of data storage required by law"
           ],
-          "correct":1
+          "correct":0
         },
         {
           "id":4,
-          "question":"questions",
+          "question":"Which of the following is not a weakness in Kerberos?",
           "answers":[
-            "a", "b", "c", "d"
+            "The KDC is a single point of failure", 
+            "Compromise of the KDC would allow attackers to impersonate any user.", 
+            "Authentication information is not encrypted.", 
+            "It is susceptible to password guessing."
           ],
-          "correct":1
+          "correct":2
         }
       ]
     },
     {
       "id":3,
-      "title": "Test 3",
+      "title": "Ransomware (all certs)",
       "questions":
       [
         {
           "id":0,
-          "question":"questions",
+          "question":"Local backup files – saved on your computer – will protect your data from being lost in a ransomware attack. True or False?",
           "answers":[
-            "a", "b", "c", "d"
+            "True", "False"
           ],
           "correct":1
         },
         {
           "id":1,
-          "question":"questions",
+          "question":"Which of these best describes how criminals start ransomware attacks?",
           "answers":[
-            "a", "b", "c", "d"
+            "Sending a scam email with links or attachments that put your data and network at risk", 
+            "Getting into your server through vulnerabilities and installing malware.", 
+            "Using infected websites that automatically download malicious software to your computer or mobile device.", 
+            "All of the above"
           ],
-          "correct":1
+          "correct":3
         },
         {
           "id":2,
-          "question":"questions",
+          "question":"If you encounter a ransomware attack, the first thing you should do is pay the ransom. True or False?",
           "answers":[
-            "a", "b", "c", "d"
-          ],
-          "correct":1
-        },
-        {
-          "id":3,
-          "question":"questions",
-          "answers":[
-            "a", "b", "c", "d"
-          ],
-          "correct":1
-        },
-        {
-          "id":4,
-          "question":"questions",
-          "answers":[
-            "a", "b", "c", "d"
+            "True", 
+            "False"
           ],
           "correct":1
         }

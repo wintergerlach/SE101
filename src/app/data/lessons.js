@@ -45,5 +45,21 @@ export const lessonData = [
           ],
           "correct": 0
         }
+    },
+    {
+      "id":3,
+      "title":"Security Threats",
+      "content":"Threat is when someone has the potential to cause harm by damaging or destroying the official data of a system or organization. Cyber threats can originate from various actors, including corporate spies, hacktivists, terrorist groups, hostile nation-states, criminal organizations, lone hackers and disgruntled employees. These include phishing, ransomware, unauthorized use of own organizations system privileges, etc.",
+      "comprehension":
+        {
+          "question": "Which is a type of threat?",
+          "answers":[
+            "Corporate Account Takeover", 
+            "Data", 
+            "Physical Devices", 
+            "Fake account access"
+          ],
+          "correct": 0
+        }
     }
   ]
