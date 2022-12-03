@@ -1,7 +1,7 @@
 export const cert ={
   "tests":[
     {
-      "id":1,
+      "id":0,
       "title": "CISA",
       "questions":
       [
@@ -41,7 +41,7 @@ export const cert ={
       ]
     },
     {
-      "id":2,
+      "id":1,
       "title": "CISSP",
       "questions":
       [
@@ -102,7 +102,7 @@ export const cert ={
       ]
     },
     {
-      "id":3,
+      "id":2,
       "title": "Ransomware (all certs)",
       "questions":
       [

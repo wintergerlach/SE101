@@ -20,7 +20,6 @@ export class Tab1Page {
   selected(id: number): void {
     this.state = 'lesson';
     this.id = id;
-    //may need more magic code
   }
 
   back(): void{
@@ -31,8 +30,6 @@ export class Tab1Page {
   }
 
   check(): void {
-    console.log(typeof(this.selectedAnswer));
-    console.log(typeof(this.lessons[this.id].comprehension.correct));
     if (this.selectedAnswer === this.lessons[this.id].comprehension.correct.toString()) {
       this.answer = 'correct'
     } else {

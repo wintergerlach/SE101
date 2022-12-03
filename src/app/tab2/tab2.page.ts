@@ -22,7 +22,6 @@ export class Tab2Page {
   selected(id: number):void {
     this.state = "test";
     this.id = id;
-    console.log(this.id);
   }
 
   back(): void{
@@ -42,8 +41,11 @@ export class Tab2Page {
   check(): void{
     this.answers.push(this.selectedAnswer);
     this.state = "results";
-    //ADD CODE TO COUNT CORRECT ANSWERS
-    console.log(this.answers)
+    for (let i = 0; i < this.answers.length; i++) {
+        if(this.answers[i]===this.certs[this.id].questions[i].correct.toString()){
+          this.results = this.results + 1;
+        }
+    }
     if (this.results/this.answers.length > 0.79){
       this.message = "good";
     } else {
